@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios"
+import React, { useEffect, useState } from "react";
+import Roter from "./components/Roter"
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [ name, setName ] = useState("")
+
+
+	async function postName(e) {
+		e.preventDefault()
+		try {
+			await axios.post("http://localhost:4000/post_name", {
+				name
+			})
+		} catch (error) {
+			console.error(error)
+		}
+	}
+
+	return (
+<div >
+<Roter />		
+	<form onSubmit={postName}>
+				<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+				<button type="submit">Send Name</button>
+			</form>
+		</div>
+		
+	)
 }
 
-export default App;
+export default App
