@@ -151,6 +151,10 @@ function SignUpUser() {
             >
               Sign Up
             </Button>
+            <link href="/issuerdash">
+         
+            </link>
+         
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link href="/" variant="body2">

@@ -4,7 +4,10 @@ function Footer() {
   const d = new Date();
   let year = d.getFullYear();
   return (
-    <footer>
+    <div className="bg-secondary">
+<footer>
+<br />
+
       <ul className="list-inline text-center">
         <li className="list-inline-item">
           <a href="https://twitter.com/vishnus27071772" target="blank">
@@ -30,9 +33,61 @@ function Footer() {
             </span>
           </a>
         </li>
+        <br />
+        <br />
+
+        <section >
+        <div class="container">
+  <div class="row">
+    <div class="col-sm">
+    </div>
+    <div class="col-sm">
+    <p className="cpwright">
+        
+        Tools and Technologies Used:
+      </p>
+    <p className="svw">
+    <ul className="ul">
+    <li>
+<a href="www.figma.com">   Figma</a> 
+</li>
+<li>
+<a href="www.figma.com">   React</a> 
+</li>
+<li>
+<a href="www.figma.com">   NodeJS and ExpressJS</a> 
+</li>
+<li>
+<a href="www.figma.com"> MongoDB</a> 
+</li>
+<li>
+<a href="www.figma.com"> Ethereum Testnet</a> 
+</li>
+    </ul>
+  
+
+          </p>    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+</div>
+
+
+        </section>
       </ul>
-      <p>&copy; Vishnu Swaroop {year}</p>
+      <p className="bg-dark cpwright text-center">
+      <br />
+&copy; DigiCerti {year}
+<br />
+<br />
+
+</p>
+
     </footer>
+
+
+    </div>
+    
   );
 }
 
