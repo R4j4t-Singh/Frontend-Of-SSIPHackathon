@@ -90,7 +90,7 @@ const Dashboard = () => {
               <tbody>
                 {record.slice(0, 5).map((output) => (
                   <tr>
-                    <td>{output.id}</td>
+                    <td>{output.name}</td>
                     <td>{output.name}</td>
                     <td>{output.email}</td>
                     <td>

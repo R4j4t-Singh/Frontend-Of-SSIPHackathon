@@ -10,7 +10,7 @@ function App() {
 	async function postName(e) {
 		e.preventDefault()
 		try {
-			await axios.post("http://localhost:4000/Login", {
+			await axios.post("http://localhost:4000/", {
 				name
 			})
 		} catch (error) {

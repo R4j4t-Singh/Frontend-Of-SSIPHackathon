@@ -15,7 +15,7 @@ function Routerapp() {
     <div className="App">
         <Router>
           <Routes>
-            <Route element={<PrivateRoutes />}>
+            <Route element={<PrivateRoutes/>}>
                 <Route element={<Issuerdash/>} path="/issuerdash" exact/>
                 <Route element={<Userdash/>} path="/userdash" exact/>
                 <Route element={<Coursedash/>} path="/coursedash" exact/>

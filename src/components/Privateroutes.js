@@ -4,24 +4,24 @@ import { Outlet, Navigate } from 'react-router-dom'
 import axios from "axios";
 
 
-const PrivateRoutes = () => {
+const PrivateRoutes = (props) => {
       const [home, setHome ] = useState("")
       let auth = {'token':true}
 
 
-	useEffect(() => {
+	// useEffect(() => {
     
-		axios.get("http://localhost:4000/home").then(function(response) {
-			setHome(response.data)
-      console.log(home)
-		})
+	// 	axios.get("http://localhost:4000/home").then(function(response) {
+	// 		setHome(response.data)
+    //   console.log(home)
+	// 	})
 
-        if(home == "welcome"){
-            auth = {'token':true}
+    //     if(home == "welcome"){
+    //         auth = {'token':true}
     
-        }
+    //     }
     
-	}, [home])
+	// }, [home])
 
 
     return(
